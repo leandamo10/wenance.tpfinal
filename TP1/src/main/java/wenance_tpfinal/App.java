@@ -1,13 +1,18 @@
 package wenance_tpfinal;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hola Universo" );
+
+        Astronauta primerAstronauta = new Astronauta();
+        String nombre = primerAstronauta.getNombre();
+        String edad = primerAstronauta.getEdad();
+        String pais = primerAstronauta.getPais();
+
+        System.out.println("El astronauta " + nombre + " tiene " + edad + " años y nacion en  " + pais);
     }
+
+
 }
