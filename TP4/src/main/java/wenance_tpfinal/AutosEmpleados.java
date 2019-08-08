@@ -2,7 +2,7 @@ package wenance_tpfinal;
 
 public class AutosEmpleados {
 
-    String name;
-    String age;
-    String[] cars;
+    public String name;
+    public String age;
+    public String[] cars;
 }

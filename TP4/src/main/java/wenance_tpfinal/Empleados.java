@@ -2,8 +2,8 @@ package wenance_tpfinal;
 
 public class Empleados {
 
-    String name;
-    String age;
-    String birthday;
+    public String name;
+    public String age;
+    public String birthday;
 }
 
