@@ -1,34 +1,45 @@
 package wenance_tpfinal;
 
 
-import java.util.Scanner;
-
 public class Astronauta {
 
-   public String nombre;
-   public String edad;
-   public String pais;
+    private String nombre;
+    private int edad;
+    private String pais;
 
-   public Astronauta(){
-   }
-   public String getEdad(){
-      Scanner teclado = new Scanner(System.in);
-      System.out.println("Ingrese su edad por favor");
-      String edad = teclado.next();
-      return edad;
-   }
+    public Astronauta() {
+    }
 
-   public String getNombre(){
-      Scanner teclado = new Scanner(System.in);
-      System.out.println("Ingrese su nombre por favor");
-      String nombre = teclado.next();
-      return nombre;
-   }
-   public String getPais(){
-      Scanner teclado = new Scanner(System.in);
-      System.out.println("Ingrese su nombre por nacionalidad");
-      String pais = teclado.next();
-      return pais;
-   }
+    public Astronauta(String nombre, int edad, String pais) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pais = pais;
 
+    }
+
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getPais() {
+        return pais;
+    }
 }
+
