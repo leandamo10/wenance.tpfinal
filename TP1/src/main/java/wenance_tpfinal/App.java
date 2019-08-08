@@ -38,10 +38,12 @@ public class App implements Serializable {
 
         Gson gson = new Gson();
         String JSON = gson.toJson(primerAstronauta);
-        String JSON2 = gson.toJson(segundoAstronauta);
         System.out.println(JSON);
-        System.out.println(JSON2);
         System.out.println("El astronauta " + nombre + " tiene " + edad + " años y nacio en " + pais);
+
+
+        String JSON2 = gson.toJson(segundoAstronauta);
+        System.out.println(JSON2);
         System.out.println("El astronauta " + nombre1 + " tiene " + edad1 + " años y nacio en " + pais1);
     }
 
